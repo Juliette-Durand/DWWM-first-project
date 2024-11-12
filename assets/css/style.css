@@ -53,8 +53,20 @@ h1.mainTitle {
     font-size: 8.4rem;
   }
 }
+h2 {
+  font-size: 2rem;
+  color: #967000;
+}
+h2.blueTitle {
+  color: #2B2B66;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #967000;
 }
 h3.iconsTitle {
@@ -67,7 +79,7 @@ h3.memberName {
 }
 @media screen and (min-width: 768px) {
   h3 {
-    font-size: 1.3rem;
+    font-size: 2.4rem;
   }
 }
 sup {
@@ -75,11 +87,11 @@ sup {
 }
 p {
   color: #2B2B66;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 a {
@@ -101,7 +113,7 @@ header .logoContainer img {
 }
 header a {
   display: inline-block;
-  margin-left: 4rem;
+  margin-left: 1.5rem;
   font-size: 1.4rem;
   font-weight: bold;
   color: #ABABC2;
@@ -185,11 +197,11 @@ header #modalNav a.contactBtn {
 /* FOOTER */
 footer .footUp {
   background-color: #000047;
-  padding: 5rem;
+  padding: 3.5rem;
 }
 @media screen and (min-width: 576px) {
   footer .footUp {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 }
 footer .footUp .logoContainer {
@@ -206,7 +218,7 @@ footer .footUp .logoContainer img {
 }
 @media screen and (min-width: 576px) {
   footer .footUp .logoContainer img {
-    height: 7rem;
+    height: 5rem;
   }
 }
 footer .footUp nav {
@@ -221,7 +233,7 @@ footer .footUp nav ul {
   margin: 0;
 }
 footer .footUp nav ul li:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 footer .footUp nav ul li a {
   font-size: 1.2rem;
