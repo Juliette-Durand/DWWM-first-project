@@ -1,0 +1,259 @@
+/* VARIABLES */
+// Colorimétrie
+@bleuFonce:#000047;
+@bleu:#2B2B66;
+@bleuClair:#ABABC2;
+
+@brun:#967000;
+@orange:#D6AD3D;
+@beige:#FBF3D6;
+
+@white:#FFFFFF;
+
+// Typographies
+@Cap:'Caprasimo';
+@Quick:'Quicksand';
+
+
+/* MIXINS */
+.button {
+    background-color:@orange;
+    color: @beige;
+    font-family: @Cap;
+    padding:0.8rem 1.5rem;
+    font-weight: normal;
+}
+.transDuration{
+    transition-duration: 0.3s;
+}
+.transition{
+    transition: transform 0.3s ease;
+}
+
+/* HELPERS */
+// Colorimétrie
+.bleu{
+    color: @bleu;
+}
+.beige{
+    color: @beige;
+}
+// Margin
+.marginBot25{
+    margin-bottom: 2.5rem;
+}
+.marginBot50{
+    margin-bottom: 5rem;
+}
+
+
+/* GLOBAL */
+html{
+    font-size:62.5%;
+}
+
+*{
+    font-family: @Quick;
+}
+h1, h2, h3{
+    font-family: @Cap;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: @beige;
+    &.mainTitle {
+        font-size: 3.8rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 6.4rem;
+        &.mainTitle {
+            font-size: 8.4rem;
+        }
+    }
+}
+
+h3{
+    font-size: 2.4rem;
+    color:@brun;
+    &.iconsTitle{
+        font-size: 3rem;
+        font-family: @Quick;
+        color: @bleu;
+    }
+    &.memberName{
+        color: @beige;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 1.3rem;
+    }
+}
+sup{
+    font-family: inherit;
+}
+p{
+    color:@bleu;
+    font-size: 1.6rem;
+    @media screen and (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+/* NAVBAR */
+header {
+    background-color: @bleuFonce;
+    padding:2rem;
+    &.change{
+        height:100vh;
+    }
+    // Navbar desktop
+    .logoContainer {
+        height:5rem;
+        img {
+            height:inherit;
+        }
+    }
+    a{
+        display:inline-block;
+        margin-left:4rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color:@bleuClair;
+        .transDuration();
+        &:hover{
+            color: @beige;
+            .transDuration();
+        }
+        &.contactBtn {
+            .button();
+            font-size: 1.6rem;
+        }
+        @media screen and (min-width: 992px){
+            margin-left:5rem;
+            font-size: 1.6rem;
+            &.contactBtn {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .burgerIcon{
+        position:relative;
+        width:3.8rem;
+        height:1.5rem;
+        display:flex;
+        align-items:center;
+        &::before{
+            position:absolute;
+            content:"";
+            background-color:white;
+            width:100%;
+            height:0.4rem;
+            border-radius:0.5rem;
+            transform:rotate(0) translateY(-0.6rem);
+            .transition();
+        }
+        &::after{
+            position:absolute;
+            content:"";
+            background-color:white;
+            width:100%;
+            height:0.4rem;
+            border-radius:0.5rem;
+            transform:rotate(0) translateY(0.6rem);
+            .transition();
+        }
+        &.change::before{
+            transform:rotate(25deg) translateY(0);
+        }
+        &.change::after{
+            transform:rotate(-25deg) translateY(0);
+        }
+    }
+    // Navbar mobile
+    #modalNav{
+        text-align: center;
+        display: none;
+        height:90%;
+        &.change{
+            display: flex;
+        }
+        nav{
+            margin-bottom: 7.5rem;
+            li{
+                &:not(:last-child){
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+        a{
+            margin-left:0;
+            font-size: 2.4rem;
+            &.contactBtn {
+                margin-left:0;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+footer{
+    .footUp{
+        background-color: @bleuFonce;
+        padding:5rem;
+        @media screen and (min-width: 576px) {
+            padding:5rem 0;
+        }
+        .logoContainer{
+            margin-bottom:2.5rem;
+            @media screen and (min-width: 576px) {
+                margin-bottom:0;
+            }
+            img{
+                opacity:0.6;
+                height: 5rem;
+                @media screen and (min-width: 576px){
+                    height: 7rem;
+                }
+            }
+        }
+        nav{
+            text-align: center;
+            @media screen and (min-width: 576px) {
+                text-align: end;
+            }
+            ul{
+                margin:0;
+                li{
+                    &:not(:last-child) {
+                        margin-bottom:1rem;
+                    }
+                    a{
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color:@bleuClair;
+                        .transDuration();
+                        &:hover{
+                            color: @beige;
+                            .transDuration();
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footDown{
+        padding:0.8rem 2rem;
+        background-color: @beige;
+        color:@bleuFonce;
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-align: center;
+        @media screen and (min-width: 576px) {
+            font-size: 1.2rem;
+            padding:1rem 0;
+        }
+    }
+}

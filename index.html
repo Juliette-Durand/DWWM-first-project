@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Horbotteux - Association théâtrâle et culturelle à Lalaye-Charbes (67)</title>
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header id="header" class="container-fluid">
+        <div class="container">
+            <div class="row">
+
+                <div class="logoContainer col-2"> <!-- Logo -->
+                    <!-- Logo version icotype à afficher sur mobile -->
+                    <img src="assets/img/Icotype_Brun.svg" alt=""
+                    class="d-md-none">
+
+                    <!-- Logo version complète à afficher sur desktop -->
+                    <img src="assets/img/Logo_Horbotteux_RVB_FondFonce.svg" alt=""
+                    class="d-none d-md-inline-block">
+                </div>
+            
+                <div class="col-10 d-flex justify-content-end align-items-center">
+                    <div>
+                        <nav class="d-none d-md-inline-block"> <!-- Liens de navigation -->
+                            <ul class="list-unstyled">
+                                <li class="d-md-inline-block"><a href="">L'association</a></li>
+                                <li class="d-md-inline-block"><a href="">Les membres</a></li>
+                                <li class="d-md-inline-block"><a href="">La Rando des Horbotteux</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="d-none d-md-inline-block"> <!-- Bouton de contact qui renvoie vers la page Contact -->
+                            <a class="contactBtn" href="">Contact</a>
+                        </div>
+
+                        <div class="burgerIconContainer d-md-none"> <!-- Icon de menu burger qui ouvre la navigation mobile -->
+                            <div class="burgerIcon" id="burgerIcon" onclick="menuBurger()"></div>
+                        </div>
+                    </div>
+                </div> <!-- col-10 -->
+
+            </div><!--row-->
+        </div><!--container-->
+
+        <div id="modalNav" class="container-fluid align-items-center"> <!-- Fenêtre de navigation qui s'affiche lorsque l'on clique sur le menu burger, SEULEMENT sur mobile -->
+            <div class="row">
+                <nav class="col-12"> <!-- Liens de navigation -->
+                    <ul class="list-unstyled">
+                        <li><a href="">L'association</a></li>
+                        <li><a href="">Les membres</a></li>
+                        <li><a href="">La Rando des Horbotteux</a></li>
+                    </ul>
+                </nav>
+                <div> <!-- Bouton de contact qui renvoie vers la page Contact -->
+                    <a class="contactBtn" href="">Contact</a>
+                </div>
+
+            </div><!--row-->
+        </div><!--#modalNav container-fluid-->
+    </header><!--container-fluid-->
+
+    <section id="hero">
+        <div>
+            <h1 class="mainTitle">
+                Les Horbotteux<br>
+                <span>Association théâtrale et culturelle à Lalaye-Charbes</span>
+            </h1>
+        </div>
+
+        <!-- Icone flèche vers le bas pour un auto scroll au clic -->
+        <i class="fa-solid fa-chevron-down"></i>
+    </section>
+
+    <!-- PRÉSENTATION -->
+    <section id="presentation">
+        <div>
+            <div>
+                <h2>Les Horbotteux</h2>
+                <p>
+                    Originaire de Lalaye-Charbes, situé dans le Bas-Rhin (67),
+                    l'association a vu le jour en <strong>1978</strong>.<br>
+    
+                    Au travers de l'interprétation de diverses pièces du <strong>registre de la comédie</strong>,
+                    c'est avant tout la <strong>transmission de la passion du théâtre</strong> de génération en génération
+                    qui a permis à l'association d'évoluer et perdurer au fil des années.<br>
+    
+                    Avec pas moins de 35 saisons à son actif, la troupe a été récompensée en 2000
+                    lors de la Cérémonie des Cèdres d'Or avec la pièce intitulée «&nbsp;Léon&nbsp;».<br>
+    
+                    Après un contexte sanitaire difficile, Les Horbotteux, restés actifs en proposant
+                    un événement culturel annuel (La Rando des Horbotteux), entendent bien remonter
+                    sur les planches en 2025 après la rénovation de la <strong>Salle Polyvalente de Lalaye</strong>,
+                    fief de l'activité de l'association.
+                </p>
+            </div>
+
+            <img src="assets/img/Photo_acteurs_sur_scene.webp" title ="Trois acteurs qui jouent sur scène" alt="Trois acteurs qui jouent sur scène"> <!-- Photo des 3 personnes sur scène -->
+        </div>
+
+        <div> <!-- Partie ICONES de valeurs -->
+            <div> <!-- BONNE HUMEUR -->
+                <img src="assets/img/Icone_Bonne_Humeur.svg" alt="">
+                <h3 class="iconsTitle">Bonne humeur</h3>
+            </div>
+
+            <div> <!-- PARTAGE -->
+                <img src="assets/img/Icone_Partage.svg" alt="">
+                <h3 class="iconsTitle">Partage</h3>
+            </div>
+
+            <div> <!-- BIENVEILLANCE -->
+                <img src="assets/img/Icone_Bienveillance.svg" alt="">
+                <h3 class="iconsTitle">Bienveillance</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTUALITÉS -->
+    <section id="news">
+        <h2>En ce moment chez les Horbotteux&hellip;</h2>
+
+        <article> <!-- ARTICLE 1 -->
+            <img src="assets/img/Photo_rideau_piece_theatre.webp" title ="Rideau de scène éclairé" alt="Rideau de scène éclairé">
+            <h3>Le Grand Retour !</h3>
+            <p>
+                Après <b>5 années de césure</b>, dues en partie à la crise sanitaire
+                puis aux travaux de la Salle Polyvalente de Lalaye, la troupe dépoussière
+                ses bouquins pour vous proposer une nouvelle pièce pour la <b>saison 2025</b>!
+            </p>
+        </article>
+
+        <article> <!-- ARTICLE 2 -->
+            <img src="assets/img/Photo_randonneurs.webp" title="Randonneurs dans la nature" alt="Randonneurs dans la nature">
+            <h3>Récap' de la Rando des Horbotteux (3<sup>e</sup> édition)</h3>
+            <p>
+                Malgré des conditions météorologiques démotivantes, nos <b>marcheurs courageux</b>
+                ont arpenté les sentiers de ce 3e parcours de la Rando des Horbotteux !
+                Leur persévérance a été récompensée par l'<b>arrivée de quelques rayons</b>
+                de soleil perçants venus éclairer leurs tartes flambées.
+            </p>
+        </article>
+    </section>
+
+    <!-- RESEAUX SOCIAUX -->
+    <section id="reseaux">
+        <div>
+            <h2>Suivez nous sur les <span>réseaux sociaux</span>, pour ne rien manquer</h2>            
+        </div>
+
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footUp container-fluid">           
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 logoContainer d-flex justify-content-center justify-content-sm-start">
+                        <img src="assets/img/Logo_Horbotteux_MonoBlanc.svg" alt="">
+                    </div>
+                    <nav class="col-12 col-sm-6  d-flex justify-content-center justify-content-sm-end align-items-center">
+                        <ul class="list-unstyled">
+                            <li><a href="">Plan du site</a></li>
+                            <li><a href="">Mentions légales</a></li>
+                            <li><a href="">Haut de la page</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="footDown container-fluid"> <!-- Bloc tout en bas de la page pour rappeler le fait que le site est fictif -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    Ce site est un projet scolaire fictif, les informations ne sont pas réelles
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

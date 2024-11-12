@@ -1,0 +1,249 @@
+/* VARIABLES */
+/* MIXINS */
+.button {
+  background-color: #D6AD3D;
+  color: #FBF3D6;
+  font-family: 'Caprasimo';
+  padding: 0.8rem 1.5rem;
+  font-weight: normal;
+}
+.transDuration {
+  transition-duration: 0.3s;
+}
+.transition {
+  transition: transform 0.3s ease;
+}
+/* HELPERS */
+.bleu {
+  color: #2B2B66;
+}
+.beige {
+  color: #FBF3D6;
+}
+.marginBot25 {
+  margin-bottom: 2.5rem;
+}
+.marginBot50 {
+  margin-bottom: 5rem;
+}
+/* GLOBAL */
+html {
+  font-size: 62.5%;
+}
+* {
+  font-family: 'Quicksand';
+}
+h1,
+h2,
+h3 {
+  font-family: 'Caprasimo';
+}
+h1 {
+  font-size: 2.4rem;
+  color: #FBF3D6;
+}
+h1.mainTitle {
+  font-size: 3.8rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+  h1.mainTitle {
+    font-size: 8.4rem;
+  }
+}
+h3 {
+  font-size: 2.4rem;
+  color: #967000;
+}
+h3.iconsTitle {
+  font-size: 3rem;
+  font-family: 'Quicksand';
+  color: #2B2B66;
+}
+h3.memberName {
+  color: #FBF3D6;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+sup {
+  font-family: inherit;
+}
+p {
+  color: #2B2B66;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+/* NAVBAR */
+header {
+  background-color: #000047;
+  padding: 2rem;
+}
+header.change {
+  height: 100vh;
+}
+header .logoContainer {
+  height: 5rem;
+}
+header .logoContainer img {
+  height: inherit;
+}
+header a {
+  display: inline-block;
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ABABC2;
+  transition-duration: 0.3s;
+}
+header a:hover {
+  color: #FBF3D6;
+  transition-duration: 0.3s;
+}
+header a.contactBtn {
+  background-color: #D6AD3D;
+  color: #FBF3D6;
+  font-family: 'Caprasimo';
+  padding: 0.8rem 1.5rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 992px) {
+  header a {
+    margin-left: 5rem;
+    font-size: 1.6rem;
+  }
+  header a.contactBtn {
+    font-size: 1.8rem;
+  }
+}
+header .burgerIcon {
+  position: relative;
+  width: 3.8rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+header .burgerIcon::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+  transform: rotate(0) translateY(-0.6rem);
+  transition: transform 0.3s ease;
+}
+header .burgerIcon::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 0.5rem;
+  transform: rotate(0) translateY(0.6rem);
+  transition: transform 0.3s ease;
+}
+header .burgerIcon.change::before {
+  transform: rotate(25deg) translateY(0);
+}
+header .burgerIcon.change::after {
+  transform: rotate(-25deg) translateY(0);
+}
+header #modalNav {
+  text-align: center;
+  display: none;
+  height: 90%;
+}
+header #modalNav.change {
+  display: flex;
+}
+header #modalNav nav {
+  margin-bottom: 7.5rem;
+}
+header #modalNav nav li:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+header #modalNav a {
+  margin-left: 0;
+  font-size: 2.4rem;
+}
+header #modalNav a.contactBtn {
+  margin-left: 0;
+}
+/* FOOTER */
+footer .footUp {
+  background-color: #000047;
+  padding: 5rem;
+}
+@media screen and (min-width: 576px) {
+  footer .footUp {
+    padding: 5rem 0;
+  }
+}
+footer .footUp .logoContainer {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 576px) {
+  footer .footUp .logoContainer {
+    margin-bottom: 0;
+  }
+}
+footer .footUp .logoContainer img {
+  opacity: 0.6;
+  height: 5rem;
+}
+@media screen and (min-width: 576px) {
+  footer .footUp .logoContainer img {
+    height: 7rem;
+  }
+}
+footer .footUp nav {
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  footer .footUp nav {
+    text-align: end;
+  }
+}
+footer .footUp nav ul {
+  margin: 0;
+}
+footer .footUp nav ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+footer .footUp nav ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ABABC2;
+  transition-duration: 0.3s;
+}
+footer .footUp nav ul li a:hover {
+  color: #FBF3D6;
+  transition-duration: 0.3s;
+}
+footer .footDown {
+  padding: 0.8rem 2rem;
+  background-color: #FBF3D6;
+  color: #000047;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}
+@media screen and (min-width: 576px) {
+  footer .footDown {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+}
