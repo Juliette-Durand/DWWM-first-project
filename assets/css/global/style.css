@@ -14,6 +14,18 @@
 .transition {
   transition: transform 0.3s ease;
 }
+.filter {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
 /* HELPERS */
 .bleu {
   color: #2B2B66;
@@ -45,6 +57,7 @@ h1 {
 }
 h1.mainTitle {
   font-size: 3.8rem;
+  line-height: 6rem;
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -98,10 +111,22 @@ p {
 a {
   text-decoration: none;
 }
+section:not(:last-child) {
+  padding: 5rem 0;
+}
 /* NAVBAR */
 header {
   background-color: #000047;
   padding: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition-duration: 0.3s;
+}
+header.sticky {
+  background-color: rgba(0, 0, 71, 0.9);
+  padding: 1rem;
+  transition-duration: 0.3s;
 }
 header.change {
   height: 100vh;
@@ -194,6 +219,27 @@ header #modalNav a {
 }
 header #modalNav a.contactBtn {
   margin-left: 0;
+}
+/* HERO BANNER */
+#hero {
+  background-image: url(../../img/Curtain.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+#hero::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #000047;
+  opacity: 0.3;
 }
 /* FOOTER */
 footer .footUp {

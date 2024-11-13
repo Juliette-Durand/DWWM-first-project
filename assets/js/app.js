@@ -6,3 +6,9 @@ function menuBurger(){ // Affiche la modal de navigation mobile au clic
     header.classList.toggle('change');
     nav.classList.toggle('change');
 }
+
+window.onscroll = function() { myFunction() };
+function myFunction() {
+  const header = document.getElementById("header");
+  header.classList.toggle("sticky", document.documentElement.scrollTop > 50);
+}

@@ -1,0 +1,29 @@
+/* Variables */
+/* VARIABLES */
+/* Section Hero */
+#hero {
+  height: 100vh;
+}
+#hero h1 {
+  width: 100%;
+}
+#hero h1 span {
+  font-size: 4.8rem;
+  color: #D6AD3D;
+}
+#hero i {
+  font-size: 5rem;
+  color: #ABABC2;
+}
+#hero > .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+#hero > .container .row {
+  height: 100%;
+  padding-top: 16%;
+}
+#presentation img {
+  width: 100%;
+}

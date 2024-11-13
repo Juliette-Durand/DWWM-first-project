@@ -15,6 +15,18 @@
 .transition{
     transition: transform 0.3s ease;
 }
+.filter{
+    position:absolute;
+        content:"";
+        width:100%;
+        height:100%;
+        top:0;
+        right:0;
+}
+.flexAlignCenter{
+    display: flex;
+    align-items: center;
+}
 
 /* HELPERS */
 // Colorimétrie
@@ -50,6 +62,7 @@ h1 {
     color: @beige;
     &.mainTitle {
         font-size: 3.8rem;
+        line-height: 6rem;
     }
     @media screen and (min-width: 768px) {
         font-size: 6.4rem;
@@ -97,11 +110,23 @@ p{
 a{
     text-decoration: none;
 }
+section:not(:last-child){
+    padding:5rem 0;
+}
 
 /* NAVBAR */
 header {
     background-color: @bleuFonce;
     padding:2rem;
+    position:fixed;
+    top:0;
+    z-index:999;
+    .transDuration();
+    &.sticky{
+        background-color: @bleuFonceOp;
+        padding:1rem;
+        .transDuration();
+    }
     &.change{
         height:100vh;
     }
@@ -191,6 +216,22 @@ header {
                 margin-left:0;
             }
         }
+    }
+}
+
+/* HERO BANNER */
+#hero{
+    background-image: url(../../img/Curtain.webp);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    z-index:0;
+    .flexAlignCenter();
+    &::before{
+        .filter();
+        z-index:1;
+        background-color:@bleuFonce;
+        opacity:0.3;
     }
 }
 
