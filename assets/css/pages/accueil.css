@@ -3,6 +3,7 @@
 /* Section Hero */
 #hero {
   height: 100vh;
+  background-position: bottom;
 }
 #hero h1 {
   width: 100%;
@@ -22,8 +23,16 @@
 }
 #hero > .container .row {
   height: 100%;
-  padding-top: 16%;
+  padding-top: 15%;
 }
 #presentation img {
   width: 100%;
+}
+#presentation .icons img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+#news img {
+  width: 100%;
+  margin-bottom: 1.5rem;
 }

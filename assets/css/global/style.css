@@ -33,6 +33,9 @@
 .beige {
   color: #FBF3D6;
 }
+.bgBeige {
+  background-color: #FBF3D6;
+}
 .marginBot25 {
   margin-bottom: 2.5rem;
 }
@@ -87,6 +90,7 @@ h3.iconsTitle {
   font-size: 3rem;
   font-family: 'Quicksand';
   color: #2B2B66;
+  font-weight: bold;
 }
 h3.memberName {
   color: #FBF3D6;
@@ -112,7 +116,7 @@ a {
   text-decoration: none;
 }
 section:not(:last-child) {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 /* NAVBAR */
 header {

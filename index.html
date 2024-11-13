@@ -93,7 +93,7 @@
     <!-- PRÉSENTATION -->
     <section id="presentation" class="whiteBoard container-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row g-5 d-flex align-items-center marginBot50">
                 <div class="col-12 col-md-6 order-1 order-md-2">
                     <h2>Les Horbotteux</h2>
                     <p>
@@ -117,51 +117,56 @@
                 <div class="col-12 col-md-6 order-2 order-md-1">
                     <img src="assets/img/Photo_acteurs_sur_scene.webp" title ="Trois acteurs qui jouent sur scène" alt="Trois acteurs qui jouent sur scène"> <!-- Photo des 3 personnes sur scène -->
                 </div>
-            </div>
-        </div>
+            </div> <!-- row -->
 
-        <div> <!-- Partie ICONES de valeurs -->
-            <div> <!-- BONNE HUMEUR -->
-                <img src="assets/img/Icone_Bonne_Humeur.svg" alt="">
-                <h3 class="iconsTitle">Bonne humeur</h3>
-            </div>
+            <div class="icons row text-center"> <!-- Partie ICONES de valeurs -->
+                <div class="col-4"> <!-- BONNE HUMEUR -->
+                    <img src="assets/img/Icone_Bonne_Humeur.svg" alt="">
+                    <h3 class="iconsTitle">Bonne humeur</h3>
+                </div>
+    
+                <div class="col-4"> <!-- PARTAGE -->
+                    <img src="assets/img/Icone_Partage.svg" alt="">
+                    <h3 class="iconsTitle">Partage</h3>
+                </div>
+    
+                <div class="col-4"> <!-- BIENVEILLANCE -->
+                    <img src="assets/img/Icone_Bienveillance.svg" alt="">
+                    <h3 class="iconsTitle">Bienveillance</h3>
+                </div>
+            </div> <!-- row -->
+        </div> <!--container-->
 
-            <div> <!-- PARTAGE -->
-                <img src="assets/img/Icone_Partage.svg" alt="">
-                <h3 class="iconsTitle">Partage</h3>
-            </div>
-
-            <div> <!-- BIENVEILLANCE -->
-                <img src="assets/img/Icone_Bienveillance.svg" alt="">
-                <h3 class="iconsTitle">Bienveillance</h3>
-            </div>
-        </div>
     </section>
 
     <!-- ACTUALITÉS -->
-    <section id="news">
-        <h2 class="blueTitle">En ce moment chez les Horbotteux&hellip;</h2>
-
-        <article> <!-- ARTICLE 1 -->
-            <img src="assets/img/Photo_rideau_piece_theatre.webp" title ="Rideau de scène éclairé" alt="Rideau de scène éclairé">
-            <h3>Le Grand Retour !</h3>
-            <p>
-                Après <b>5 années de césure</b>, dues en partie à la crise sanitaire
-                puis aux travaux de la Salle Polyvalente de Lalaye, la troupe dépoussière
-                ses bouquins pour vous proposer une nouvelle pièce pour la <b>saison 2025</b>!
-            </p>
-        </article>
-
-        <article> <!-- ARTICLE 2 -->
-            <img src="assets/img/Photo_randonneurs.webp" title="Randonneurs dans la nature" alt="Randonneurs dans la nature">
-            <h3>Récap' de la Rando des Horbotteux (3<sup>e</sup> édition)</h3>
-            <p>
-                Malgré des conditions météorologiques démotivantes, nos <b>marcheurs courageux</b>
-                ont arpenté les sentiers de ce 3e parcours de la Rando des Horbotteux !
-                Leur persévérance a été récompensée par l'<b>arrivée de quelques rayons</b>
-                de soleil perçants venus éclairer leurs tartes flambées.
-            </p>
-        </article>
+    <section id="news" class="container-fluid bgBeige">
+        <div class="container">
+            <h2 class="blueTitle marginBot25">En ce moment chez les Horbotteux&hellip;</h2>
+    
+            <div class="row g-5">
+                <article class="col-12 col-md-6"> <!-- ARTICLE 1 -->
+                    <img src="assets/img/Photo_rideau_piece_theatre.webp" title ="Rideau de scène éclairé" alt="Rideau de scène éclairé">
+                    <h3>Le Grand Retour !</h3>
+                    <p>
+                        Après <b>5 années de césure</b>, dues en partie à la crise sanitaire
+                        puis aux travaux de la Salle Polyvalente de Lalaye, la troupe dépoussière
+                        ses bouquins pour vous proposer une nouvelle pièce pour la <b>saison 2025</b>!
+                    </p>
+                </article>
+        
+                <article class="col-12 col-md-6"> <!-- ARTICLE 2 -->
+                    <img src="assets/img/Photo_randonneurs.webp" title="Randonneurs dans la nature" alt="Randonneurs dans la nature">
+                    <h3>Récap' de la Rando des Horbotteux (3<sup>e</sup> édition)</h3>
+                    <p>
+                        Malgré des conditions météorologiques démotivantes, nos <b>marcheurs courageux</b>
+                        ont arpenté les sentiers de ce 3e parcours de la Rando des Horbotteux !
+                        Leur persévérance a été récompensée par l'<b>arrivée de quelques rayons</b>
+                        de soleil perçants venus éclairer leurs tartes flambées.
+                    </p>
+                </article>
+            </div>
+        </div>
     </section>
 
     <!-- RESEAUX SOCIAUX -->
