@@ -9,10 +9,10 @@
   font-weight: normal;
 }
 .transDuration {
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .transition {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 .filter {
   position: absolute;
@@ -125,12 +125,12 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 header.sticky {
   background-color: rgba(0, 0, 71, 0.9);
   padding: 1rem;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 header.change {
   height: 100vh;
@@ -147,11 +147,11 @@ header a {
   font-size: 1.4rem;
   font-weight: bold;
   color: #ABABC2;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 header a:hover {
   color: #FBF3D6;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 header a.contactBtn {
   background-color: #D6AD3D;
@@ -185,7 +185,7 @@ header .burgerIcon::before {
   height: 0.4rem;
   border-radius: 0.5rem;
   transform: rotate(0) translateY(-0.6rem);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 header .burgerIcon::after {
   position: absolute;
@@ -195,7 +195,7 @@ header .burgerIcon::after {
   height: 0.4rem;
   border-radius: 0.5rem;
   transform: rotate(0) translateY(0.6rem);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 header .burgerIcon.change::before {
   transform: rotate(25deg) translateY(0);
@@ -245,6 +245,45 @@ header #modalNav a.contactBtn {
   background-color: #000047;
   opacity: 0.3;
 }
+/* RESEAUX */
+#reseaux {
+  background-image: url(../../img/Curtain.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+#reseaux::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #000047;
+  opacity: 0.3;
+}
+#reseaux .container {
+  position: relative;
+  z-index: 2;
+}
+#reseaux .container .row h2 {
+  color: #FBF3D6;
+}
+#reseaux .container .row h2 span {
+  font-family: 'Caprasimo';
+  color: #D6AD3D;
+}
+#reseaux .container .row .socials i {
+  color: #ABABC2;
+  font-size: 8rem;
+  margin-left: 2.5rem;
+  transition-duration: 0.2s;
+}
+#reseaux .container .row .socials i:hover {
+  color: #FBF3D6;
+}
 /* FOOTER */
 footer .footUp {
   background-color: #000047;
@@ -290,11 +329,11 @@ footer .footUp nav ul li a {
   font-size: 1.2rem;
   font-weight: bold;
   color: #ABABC2;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 footer .footUp nav ul li a:hover {
   color: #FBF3D6;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 footer .footDown {
   padding: 0.8rem 2rem;

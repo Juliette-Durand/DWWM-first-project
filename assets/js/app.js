@@ -12,3 +12,11 @@ function myFunction() {
   const header = document.getElementById("header");
   header.classList.toggle("sticky", document.documentElement.scrollTop > 50);
 }
+
+function scrollToTop(){
+  window.scrollTo({
+    top:0,
+    left:0,
+    behavior: "smooth",
+  });
+}

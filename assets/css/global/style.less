@@ -10,10 +10,10 @@
     font-weight: normal;
 }
 .transDuration{
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 .transition{
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 .filter{
     position:absolute;
@@ -236,6 +236,46 @@ header {
         z-index:1;
         background-color:@bleuFonce;
         opacity:0.3;
+    }
+}
+
+/* RESEAUX */
+#reseaux{
+    background-image: url(../../img/Curtain.webp);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    z-index:0;
+    &::before{
+        .filter();
+        z-index:1;
+        background-color:@bleuFonce;
+        opacity:0.3;
+    }
+    .container{
+        position:relative;
+        z-index:2;
+        .row{
+            h2{
+                color:@beige;
+                span{
+                    font-family: @Cap;
+                    color:@orange;
+        
+                }
+            }
+            .socials{
+                i{
+                    color:@bleuClair;
+                    font-size: 8rem;
+                    margin-left:2.5rem;
+                    .transDuration();
+                    &:hover{
+                        color:@beige;
+                    }
+                }
+            }
+        }
     }
 }
 
