@@ -9,8 +9,14 @@
   width: 100%;
 }
 #hero h1 span {
-  font-size: 4.8rem;
+  font-size: 2.4rem;
   color: #D6AD3D;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  #hero h1 span {
+    font-size: 4.8rem;
+  }
 }
 #hero i {
   font-size: 5rem;
