@@ -118,7 +118,7 @@ a {
   text-decoration: none;
 }
 section,
-.siteMapSection {
+#siteMapSection {
   padding: 10rem 0;
 }
 .row {
