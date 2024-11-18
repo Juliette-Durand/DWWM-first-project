@@ -8,19 +8,32 @@
         z-index: 1;
         .memberTitle{
             width:100%;
-            padding:2rem 2.5rem;
-            background-color: @bleuFonce;
+            padding:1.8rem 2.5rem;
+            background-color: @bleuFonceOp;
             opacity: 0.9;
             position:absolute;
             bottom:0;
-            z-index:2;
+            z-index:3;
             h2{
                 color: @beige;
+                font-size:3rem;
                 margin-bottom: 0;
             }
+            p{
+                color:@bleuClair;
+                font-weight: 500;
+            }
         }
-    }
-    img{
-        width:100%;
+        img{
+            width:100%;
+            filter: grayscale(1);
+        }
+        &::before{
+            .filter();
+            bottom:0;
+            background-color: @orange;
+            opacity:0.2;
+            z-index:2;
+        }
     }
 }

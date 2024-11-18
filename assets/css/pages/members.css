@@ -33,17 +33,35 @@
 }
 #members .member .memberTitle {
   width: 100%;
-  padding: 2rem 2.5rem;
-  background-color: #000047;
+  padding: 1.8rem 2.5rem;
+  background-color: rgba(0, 0, 71, 0.9);
   opacity: 0.9;
   position: absolute;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
 }
 #members .member .memberTitle h2 {
   color: #FBF3D6;
+  font-size: 3rem;
   margin-bottom: 0;
 }
-#members img {
+#members .member .memberTitle p {
+  color: #ABABC2;
+  font-weight: 500;
+}
+#members .member img {
   width: 100%;
+  filter: grayscale(1);
+}
+#members .member::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #D6AD3D;
+  opacity: 0.2;
+  z-index: 2;
 }
