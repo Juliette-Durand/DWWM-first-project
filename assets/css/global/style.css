@@ -94,9 +94,6 @@ h3.iconsTitle {
   color: #2B2B66;
   font-weight: bold;
 }
-h3.memberName {
-  color: #FBF3D6;
-}
 @media screen and (min-width: 768px) {
   h3 {
     font-size: 2.4rem;
