@@ -117,7 +117,7 @@ p {
 a {
   text-decoration: none;
 }
-section:not(:last-child),
+section,
 .siteMapSection {
   padding: 10rem 0;
 }
