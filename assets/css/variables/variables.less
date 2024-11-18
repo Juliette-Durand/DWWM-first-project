@@ -9,8 +9,37 @@
 @orange:#D6AD3D;
 @beige:#FBF3D6;
 
+@formBG:#F5F5F5;
+
 @white:#FFFFFF;
 
 // Typographies
 @Cap:'Caprasimo';
 @Quick:'Quicksand';
+
+/* MIXINS */
+.button {
+    background-color:@orange;
+    color: @beige;
+    font-family: @Cap;
+    padding:0.8rem 1.5rem;
+    font-weight: normal;
+}
+.transDuration{
+    transition-duration: 0.2s;
+}
+.transition{
+    transition: transform 0.2s ease;
+}
+.filter{
+    position:absolute;
+        content:"";
+        width:100%;
+        height:100%;
+        top:0;
+        right:0;
+}
+.flexAlignCenter{
+    display: flex;
+    align-items: center;
+}

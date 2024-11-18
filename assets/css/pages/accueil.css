@@ -22,11 +22,6 @@
   font-size: 5rem;
   color: #ABABC2;
 }
-#hero > .container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-}
 #hero > .container .row {
   height: 100%;
   padding-top: 15%;
