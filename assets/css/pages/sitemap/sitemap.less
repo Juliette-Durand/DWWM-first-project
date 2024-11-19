@@ -6,13 +6,31 @@ div#siteMapSection{
     font-family: @Quick;
     font-size:2.4rem;
     ul{
+        a{
+            color:@bleu;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        li.prime{
+            font-weight: bold;
+        }
         list-style: none;
         &.content,.saisons{
             font-size: 2rem;
             margin-left:2rem;
         }
-        li:first-child{
-            margin-top: 1rem;
+        &.content{
+            color: @orange;
+            li:first-child{
+                margin-top:1rem;
+            }
+            li:last-child{
+                margin-bottom:1rem;
+            }
+            a{
+                color:@bleuClair;
+            }
         }
     }
 }

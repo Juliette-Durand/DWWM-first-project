@@ -34,11 +34,29 @@ div#siteMapSection {
 div#siteMapSection ul {
   list-style: none;
 }
+div#siteMapSection ul a {
+  color: #2B2B66;
+}
+div#siteMapSection ul a:hover {
+  text-decoration: underline;
+}
+div#siteMapSection ul li.prime {
+  font-weight: bold;
+}
 div#siteMapSection ul.content,
 div#siteMapSection ul .saisons {
   font-size: 2rem;
   margin-left: 2rem;
 }
-div#siteMapSection ul li:first-child {
+div#siteMapSection ul.content {
+  color: #D6AD3D;
+}
+div#siteMapSection ul.content li:first-child {
   margin-top: 1rem;
+}
+div#siteMapSection ul.content li:last-child {
+  margin-bottom: 1rem;
+}
+div#siteMapSection ul.content a {
+  color: #ABABC2;
 }

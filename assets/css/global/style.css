@@ -145,8 +145,10 @@ header.change {
 header .logoContainer {
   height: 5rem;
 }
+header .logoContainer a,
 header .logoContainer img {
   height: inherit;
+  margin-left: 0;
 }
 header a {
   display: inline-block;
