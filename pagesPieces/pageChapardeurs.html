@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Horbotteux - Association théâtrâle et culturelle à Lalaye-Charbes (67)</title>
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="../assets/css/global/style.css">
+    <link rel="stylesheet" href="../assets/css/pages/piece/piece.css">
+</head>
+<body>
+    
+    <header id="header" class="container-fluid">
+        <div class="container">
+            <div class="row">
+
+                <div class="logoContainer col-2"> <!-- Logo -->
+                    <!-- Logo version icotype à afficher sur mobile -->
+                    <img src="../assets/img/Icotype_Brun.svg" alt=""
+                    class="d-md-none">
+
+                    <!-- Logo version complète à afficher sur desktop -->
+                    <img src="../assets/img/Logo_Horbotteux_RVB_FondFonce.svg" alt=""
+                    class="d-none d-md-inline-block">
+                </div>
+            
+                <div class="col-10 d-flex justify-content-end align-items-center">
+                    <div>
+                        <nav class="d-none d-md-inline-block"> <!-- Liens de navigation -->
+                            <ul class="list-unstyled">
+                                <li class="d-md-inline-block"><a href="">L'association</a></li>
+                                <li class="d-md-inline-block"><a href="../pageMembers.html">Les membres</a></li>
+                                <li class="d-md-inline-block"><a href="">La Rando des Horbotteux</a></li>
+                            </ul>
+                        </nav>
+        
+                        <div class="d-none d-md-inline-block"> <!-- Bouton de contact qui renvoie vers la page Contact -->
+                            <a class="contactBtn" href="../pageContact.html">Contact</a>
+                        </div>
+
+                        <div class="burgerIconContainer d-md-none"> <!-- Icon de menu burger qui ouvre la navigation mobile -->
+                            <div class="burgerIcon" id="burgerIcon" onclick="menuBurger()"></div>
+                        </div>
+                    </div>
+                </div> <!-- col-10 -->
+
+            </div><!--row-->
+        </div><!--container-->
+
+        <div id="modalNav" class="container-fluid align-items-center"> <!-- Fenêtre de navigation qui s'affiche lorsque l'on clique sur le menu burger, SEULEMENT sur mobile -->
+            <div class="row">
+                <nav class="col-12"> <!-- Liens de navigation -->
+                    <ul class="list-unstyled">
+                        <li><a href="">L'association</a></li>
+                        <li><a href="../pageMembers.html">Les membres</a></li>
+                        <li><a href="../pageContact.html">La Rando des Horbotteux</a></li>
+                    </ul>
+                </nav>
+                <div> <!-- Bouton de contact qui renvoie vers la page Contact -->
+                    <a class="contactBtn" href="">Contact</a>
+                </div>
+
+            </div><!--row-->
+        </div><!--#modalNav container-fluid-->
+    </header><!--container-fluid-->
+
+    <!-- HEAD BANNER -->
+    <section id="hero" class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <h1>Les Chapardeurs</h1>
+          </div>
+        </div>
+    </section>
+
+    <div id="seasonPlay" class="container-fluid">
+        <section id="actual" class="container">
+            <div class="grid">
+                <div class="title">
+                    <h2>Saison théâtrâle 2018</h2>
+                </div>
+                <div class="poster">
+                    <img src="../assets/img/Affiche_Chapardeurs_2018.webp" alt="Affiche de la pièce Les Chapardeurs">
+                </div>
+                <div class="description">
+                    <h3>Résumé</h3>
+                    <p class="resume">
+                        Lucas Belmont, célèbre acteur de cinéma, fuyant le harcèlement de ses fans, se réfugie au Paradis, gîte de montagne isolé, tenu par Claire. Lucas pense avoir trouvé le havre de paix idéal, hélas pour lui, le répit sera de courte durée car le lieu est beaucoup plus fréquenté qu'il n'y paraît. Un couple de randonneurs entraînés par une guide dynamique, une blonde explosive, un berger et sa copine, tous  sont sidérés de découvrir un acteur de la renommée  de Lucas en pleine montagne.
+                    </p>
+                    <p class="resume">
+                        Mais lorsque la valse des valises, orchestrée par un individu pour le moins suspect commence, lorsque Vanessa, l'attachante  touriste égarée manifeste le désir de s'attacher de plus en plus, Lucas Belmont réalise alors que ce paradis devient peu à peu un enfer.
+                    </p>
+                    <h3>Les acteurs</h3>
+                    <ul>
+                        <li>Florian Rochelle</li>
+                        <li>Patricia Guiot</li>
+                        <li>Charlotte Antoine-Grandjean</li>
+                        <li>Evelyne Bour</li>
+                        <li>Adeline Friess</li>
+                        <li>Manon Cucca</li>
+                        <li>Odile Matt</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="othersPlay" class="container">
+            <h2 class="marginBot25 bleuFonce">Voir également</h2>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <a href="./pageParadis.html">
+                        <img src="../assets/img/Affiche_Paradis_2020.webp" alt="Affiche de la pièce Le paradis c'est bien ici ?">
+                    </a>
+                    <h3>Le paradis c'est bien ici ?</h3>
+                    <p>François Scharre • Saison 2020 • <a href="./pageParadis.html">En savoir plus <i class="fa-solid fa-link"></i></a></p>
+                </div>
+                <div class="col-6 col-md-4">
+                    <a href="./pageToques.html">
+                        <img src="../assets/img/Affiche_Toques_2019.webp" alt="Affiche de la pièce Toqué avant d'entrer">
+                    </a>
+                    <h3>Toqué avant d'entrer</h3>
+                    <p>François Scharre • Saison 2019 • <a href="./pageToques.html">En savoir plus <i class="fa-solid fa-link"></i></a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- RESEAUX SOCIAUX -->
+    <section id="reseaux" class=" container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <h2>Suivez nous sur les <span>réseaux sociaux</span>, pour ne rien manquer</h2>            
+                </div>
+        
+                <div class="socials col-12 col-md-4 d-flex justify-content-end">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footUp container-fluid">           
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-sm-6 logoContainer d-flex justify-content-center justify-content-sm-start">
+                        <img src="../assets/img/Logo_Horbotteux_MonoBlanc.svg" alt="">
+                    </div>
+                    <nav class="col-12 col-sm-6  d-flex justify-content-center justify-content-sm-end align-items-center">
+                        <ul class="list-unstyled">
+                            <li><a href="../pageSitemap.html">Plan du site</a></li>
+                            <li><a href="">Mentions légales</a></li>
+                            <li><a href="" onclick="scrollToTop()">Haut de la page</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="footDown container-fluid"> <!-- Bloc tout en bas de la page pour rappeler le fait que le site est fictif -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    Ce site est un projet scolaire fictif, les informations ne sont pas réelles
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

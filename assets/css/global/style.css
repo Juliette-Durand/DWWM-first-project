@@ -30,6 +30,9 @@
 .bleu {
   color: #2B2B66;
 }
+.bleuFonce {
+  color: #000047;
+}
 .beige {
   color: #FBF3D6;
 }
@@ -119,11 +122,22 @@ a {
 }
 section,
 #siteMapSection {
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+@media screen and (min-width: 768px) {
+  section,
+  #siteMapSection {
+    padding: 10rem 0;
+  }
 }
 .row {
-  --bs-gutter-x: 7.5rem;
+  --bs-gutter-x: 1.5rem;
   /* Largeur de gouttière bootstrap */
+}
+@media screen and (min-width: 768px) {
+  .row {
+    --bs-gutter-x: 7.5rem;
+  }
 }
 /* NAVBAR */
 header {
@@ -293,13 +307,13 @@ header #modalNav a.contactBtn {
   color: #D6AD3D;
 }
 #reseaux .container .row .socials i {
-  color: #ABABC2;
+  color: #FBF3D6;
   font-size: 8rem;
   margin-left: 2.5rem;
   transition-duration: 0.2s;
 }
 #reseaux .container .row .socials i:hover {
-  color: #FBF3D6;
+  color: #ABABC2;
 }
 /* FOOTER */
 footer .footUp {
