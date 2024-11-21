@@ -43,6 +43,9 @@ div#siteMapSection ul a:hover {
 div#siteMapSection ul li.prime {
   font-weight: bold;
 }
+div#siteMapSection ul li.prime:nth-child(2) {
+  margin-top: 1rem;
+}
 div#siteMapSection ul.content,
 div#siteMapSection ul .saisons {
   font-size: 2rem;

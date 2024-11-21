@@ -75,17 +75,3 @@ div#seasonPlay section#othersPlay img {
   width: 100%;
   margin-bottom: 1rem;
 }
-div#seasonPlay section#othersPlay a {
-  color: #D6AD3D;
-  font-weight: bold;
-}
-div#seasonPlay section#othersPlay a i {
-  display: none;
-}
-div#seasonPlay section#othersPlay a:hover {
-  color: #ABABC2;
-}
-div#seasonPlay section#othersPlay a:hover i {
-  color: #D6AD3D;
-  display: inline-block;
-}

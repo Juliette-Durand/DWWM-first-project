@@ -105,6 +105,12 @@ section,#siteMapSection{
         --bs-gutter-x:7.5rem;
     }
 }
+sup{
+    font-family: inherit;
+}
+img:not(.logo){
+    width:100%;
+}
 
 /* NAVBAR */
 header {
@@ -140,6 +146,10 @@ header {
         &:hover{
             color: @beige;
             .transDuration();
+        }
+        &.active{
+            color: @beige;
+            text-decoration: 0.2rem underline @orange;
         }
         &.contactBtn {
             .button();
@@ -224,7 +234,7 @@ header {
         .filter();
         z-index:1;
         background-color:@bleuFonce;
-        opacity:0.3;
+        opacity:0.5;
     }
     &>.container{
         position: relative;
@@ -232,6 +242,35 @@ header {
         height: 100%;
         .row{
             padding-top: 9rem;
+        }
+    }
+}
+
+/* Pages "l'association" et "Rando" */
+/* Section moreEditions */
+#moreEditions{
+    background-color: @beige;
+    img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    h3{
+        margin-bottom: 0;
+    }
+}
+#moreEditions, #othersPlay{
+    a{
+        color:@orange;
+        font-weight: bold;
+        i{
+            display:none;
+        }
+        &:hover{
+            color:@bleuClair;
+            i{
+                color:@orange;
+                display: inline-block;
+            }
         }
     }
 }
@@ -247,7 +286,7 @@ header {
         .filter();
         z-index:1;
         background-color:@bleuFonce;
-        opacity:0.3;
+        opacity:0.5;
     }
     .container{
         position:relative;

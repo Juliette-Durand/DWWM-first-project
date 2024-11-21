@@ -139,6 +139,12 @@ section,
     --bs-gutter-x: 7.5rem;
   }
 }
+sup {
+  font-family: inherit;
+}
+img:not(.logo) {
+  width: 100%;
+}
 /* NAVBAR */
 header {
   background-color: #000047;
@@ -175,6 +181,10 @@ header a {
 header a:hover {
   color: #FBF3D6;
   transition-duration: 0.2s;
+}
+header a.active {
+  color: #FBF3D6;
+  text-decoration: 0.2rem underline #D6AD3D;
 }
 header a.contactBtn {
   background-color: #D6AD3D;
@@ -266,7 +276,7 @@ header #modalNav a.contactBtn {
   right: 0;
   z-index: 1;
   background-color: #000047;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 #hero > .container {
   position: relative;
@@ -275,6 +285,36 @@ header #modalNav a.contactBtn {
 }
 #hero > .container .row {
   padding-top: 9rem;
+}
+/* Pages "l'association" et "Rando" */
+/* Section moreEditions */
+#moreEditions {
+  background-color: #FBF3D6;
+}
+#moreEditions img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#moreEditions h3 {
+  margin-bottom: 0;
+}
+#moreEditions a,
+#othersPlay a {
+  color: #D6AD3D;
+  font-weight: bold;
+}
+#moreEditions a i,
+#othersPlay a i {
+  display: none;
+}
+#moreEditions a:hover,
+#othersPlay a:hover {
+  color: #ABABC2;
+}
+#moreEditions a:hover i,
+#othersPlay a:hover i {
+  color: #D6AD3D;
+  display: inline-block;
 }
 /* RESEAUX */
 #reseaux {
@@ -293,7 +333,7 @@ header #modalNav a.contactBtn {
   right: 0;
   z-index: 1;
   background-color: #000047;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 #reseaux .container {
   position: relative;
