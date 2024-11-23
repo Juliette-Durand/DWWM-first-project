@@ -27,6 +27,9 @@
   align-items: center;
 }
 /* Section Members */
+#members .row .col-6 {
+  margin-bottom: 5rem;
+}
 #members .member {
   position: relative;
   z-index: 1;
@@ -48,6 +51,7 @@
 #members .member .memberTitle p {
   color: #ABABC2;
   font-weight: 500;
+  margin-bottom: 0;
 }
 #members .member img {
   width: 100%;
