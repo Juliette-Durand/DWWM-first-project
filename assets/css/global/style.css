@@ -161,6 +161,7 @@ header.sticky {
 }
 header.change {
   height: 100vh;
+  background-color: #000047;
 }
 header .logoContainer {
   height: 5rem;

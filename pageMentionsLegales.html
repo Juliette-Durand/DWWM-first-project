@@ -19,9 +19,9 @@
 <body>
     <header id="header" class="container-fluid">
         <div class="container">
-            <div class="row">
+            <div class="d-flex justify-content-between">
 
-                <div class="logoContainer col-2"> <!-- Logo -->
+                <div class="logoContainer"> <!-- Logo -->
                     <a href="index.html">
                         <!-- Logo version icotype à afficher sur mobile -->
                         <img src="assets/img/Icotype_Brun.svg" alt=""
@@ -33,13 +33,13 @@
                     </a>
                 </div>
             
-                <div class="col-10 d-flex justify-content-end align-items-center">
+                <div class="d-flex justify-content-end align-items-center">
                     <div>
                         <nav class="d-none d-md-inline-block"> <!-- Liens de navigation -->
                             <ul class="list-unstyled">
-                                <li class="d-md-inline-block"><a href="">L'association</a></li>
+                                <li class="d-md-inline-block"><a href="./pagePresentation.html">L'association</a></li>
                                 <li class="d-md-inline-block"><a href="./pageMembers.html">Les membres</a></li>
-                                <li class="d-md-inline-block"><a href="">La Rando des Horbotteux</a></li>
+                                <li class="d-md-inline-block"><a href="./pageRando.html">La Rando des Horbotteux</a></li>
                             </ul>
                         </nav>
         
@@ -56,21 +56,18 @@
             </div><!--row-->
         </div><!--container-->
 
-        <div id="modalNav" class="container-fluid align-items-center"> <!-- Fenêtre de navigation qui s'affiche lorsque l'on clique sur le menu burger, SEULEMENT sur mobile -->
-            <div class="row">
-                <nav class="col-12"> <!-- Liens de navigation -->
+        <div id="modalNav" class="container flex-column justify-content-center"> <!-- Fenêtre de navigation qui s'affiche lorsque l'on clique sur le menu burger, SEULEMENT sur mobile -->
+                <nav> <!-- Liens de navigation -->
                     <ul class="list-unstyled">
-                        <li><a href="">L'association</a></li>
+                        <li><a href="./pagePresentation.html">L'association</a></li>
                         <li><a href="./pageMembers.html">Les membres</a></li>
-                        <li><a href="./pageContact.html">La Rando des Horbotteux</a></li>
+                        <li><a href="./pageRando.html">La Rando des Horbotteux</a></li>
                     </ul>
                 </nav>
                 <div> <!-- Bouton de contact qui renvoie vers la page Contact -->
-                    <a class="contactBtn" href="">Contact</a>
+                    <a class="contactBtn" href="./pageContact.html">Contact</a>
                 </div>
-
-            </div><!--row-->
-        </div><!--#modalNav container-fluid-->
+        </div><!--#modalNav container-->
     </header><!--container-fluid-->
 
     <!-- HEAD BANNER -->
@@ -120,12 +117,12 @@
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-sm-6 logoContainer d-flex justify-content-center justify-content-sm-start">
-                        <img src="assets/img/Logo_Horbotteux_MonoBlanc.svg" alt="">
+                        <img src="assets/img/Logo_Horbotteux_MonoBlanc.svg" class="logo" alt="">
                     </div>
                     <nav class="col-12 col-sm-6  d-flex justify-content-center justify-content-sm-end align-items-center">
                         <ul class="list-unstyled">
                             <li><a href="./pageSitemap.html">Plan du site</a></li>
-                            <li><a href="./pageMentionsLegales.html">Mentions légales</a></li>
+                            <li><a href="">Mentions légales</a></li>
                             <li><a href="" onclick="scrollToTop()">Haut de la page</a></li>
                         </ul>
                     </nav>

@@ -37,8 +37,16 @@ div#siteMapSection ul {
 div#siteMapSection ul a {
   color: #2B2B66;
 }
+div#siteMapSection ul a i {
+  display: none;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
 div#siteMapSection ul a:hover {
   text-decoration: underline;
+}
+div#siteMapSection ul a:hover i {
+  display: inline-block;
 }
 div#siteMapSection ul li.prime {
   font-weight: bold;
@@ -62,4 +70,7 @@ div#siteMapSection ul.content li:last-child {
 }
 div#siteMapSection ul.content a {
   color: #ABABC2;
+}
+div#siteMapSection ul.content a i {
+  font-size: 1.6rem;
 }

@@ -8,8 +8,16 @@ div#siteMapSection{
     ul{
         a{
             color:@bleu;
+            i{
+                display: none;
+                margin-left: 1rem;
+                font-size: 2rem;
+            }
             &:hover{
                 text-decoration: underline;
+                i{
+                    display: inline-block;
+                }
             }
         }
         li.prime{
@@ -33,6 +41,9 @@ div#siteMapSection{
             }
             a{
                 color:@bleuClair;
+                i{
+                    font-size: 1.6rem;
+                }
             }
         }
     }
