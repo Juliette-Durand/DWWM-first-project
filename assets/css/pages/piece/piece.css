@@ -32,6 +32,12 @@ div#seasonPlay section#actual .grid {
 }
 div#seasonPlay section#actual .grid .poster img {
   width: 100%;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  div#seasonPlay section#actual .grid .poster img {
+    margin-bottom: 0;
+  }
 }
 div#seasonPlay section#actual .grid .description ul {
   list-style: none;

@@ -139,6 +139,17 @@ section,
     --bs-gutter-x: 7.5rem;
   }
 }
+.container {
+  /* Taille des paddings left et right bootstrap */
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
 sup {
   font-family: inherit;
 }
@@ -352,6 +363,12 @@ header #modalNav a.contactBtn {
 }
 #reseaux .container .row h2 {
   color: #FBF3D6;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  #reseaux .container .row h2 {
+    margin-bottom: 0;
+  }
 }
 #reseaux .container .row h2 span {
   font-family: 'Caprasimo';
@@ -359,12 +376,18 @@ header #modalNav a.contactBtn {
 }
 #reseaux .container .row .socials i {
   color: #FBF3D6;
-  font-size: 8rem;
-  margin-left: 2.5rem;
+  font-size: 6rem;
+  margin: 0 2.5rem 0 0;
   transition-duration: 0.2s;
 }
 #reseaux .container .row .socials i:hover {
   color: #ABABC2;
+}
+@media screen and (min-width: 768px) {
+  #reseaux .container .row .socials i {
+    font-size: 8rem;
+    margin: 0 0 0 2.5rem;
+  }
 }
 /* FOOTER */
 footer .footUp {

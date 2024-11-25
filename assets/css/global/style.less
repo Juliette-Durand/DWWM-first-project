@@ -105,6 +105,15 @@ section,#siteMapSection{
         --bs-gutter-x:7.5rem;
     }
 }
+.container{
+    /* Taille des paddings left et right bootstrap */
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    @media screen and (min-width: 768px){
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+    }
+}
 sup{
     font-family: inherit;
 }
@@ -301,20 +310,27 @@ header {
         .row{
             h2{
                 color:@beige;
+                margin-bottom: 2.5rem;
+                @media screen and (min-width: 768px){
+                    margin-bottom: 0;
+                }
                 span{
                     font-family: @Cap;
                     color:@orange;
-        
                 }
             }
             .socials{
                 i{
                     color:@beige;
-                    font-size: 8rem;
-                    margin-left:2.5rem;
+                    font-size: 6rem;
+                    margin:0 2.5rem 0 0;
                     .transDuration();
                     &:hover{
                         color:@bleuClair;
+                    }
+                    @media screen and (min-width: 768px){
+                    font-size: 8rem;
+                    margin:0 0 0 2.5rem;
                     }
                 }
             }
