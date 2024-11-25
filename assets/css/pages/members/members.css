@@ -29,16 +29,24 @@
 /* Section Members */
 #members .row .col-6 {
   margin-bottom: 5rem;
+  transition-duration: 0.2s;
+}
+@media screen and (max-width: 767px) {
+  #members .row .col-6:hover {
+    width: 100%;
+    transition-duration: 0.2s;
+  }
 }
 #members .member {
   position: relative;
   z-index: 1;
 }
 #members .member .memberTitle {
+  display: none;
   width: 100%;
   padding: 1.8rem 2.5rem;
   background-color: rgba(0, 0, 71, 0.9);
-  opacity: 0.9;
+  opacity: 1;
   position: absolute;
   bottom: 0;
   z-index: 3;
@@ -55,7 +63,7 @@
 }
 #members .member img {
   width: 100%;
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 #members .member::before {
   position: absolute;
@@ -66,6 +74,16 @@
   right: 0;
   bottom: 0;
   background-color: #D6AD3D;
-  opacity: 0.2;
+  opacity: 0;
   z-index: 2;
+  transition-duration: 0.2s;
+}
+#members .member:hover .memberTitle {
+  display: block;
+}
+#members .member:hover img {
+  filter: grayscale(1);
+}
+#members .member:hover::before {
+  opacity: 0.3;
 }
