@@ -31,13 +31,24 @@
   margin-bottom: 1.5rem;
 }
 #contact .maps {
-  height: 26.5rem;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  #contact .maps {
+    height: 26.5rem;
+  }
 }
 #contact .maps iframe {
   width: 100%;
   height: 100%;
   margin-top: 1.5rem;
   border: none;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  #contact .maps iframe {
+    margin-bottom: 0;
+  }
 }
 #contact form {
   font-size: 1.5rem;

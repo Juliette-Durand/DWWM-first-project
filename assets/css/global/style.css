@@ -317,6 +317,16 @@ header #modalNav a.contactBtn {
   color: #D6AD3D;
   display: inline-block;
 }
+#moreEditions .editionContent:not(:last-child),
+#othersPlay .editionContent:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  #moreEditions .editionContent:not(:last-child),
+  #othersPlay .editionContent:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 /* RESEAUX */
 #reseaux {
   background-image: url(../../img/Curtain.webp);
